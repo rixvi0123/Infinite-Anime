@@ -1,0 +1,1523 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nunito:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nunito:ital,wght@1,800&family=Rubik+Spray+Paint&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    background-color: #252525;
+    font-family: 'Nunito', sans-serif;
+}
+
+header {
+    background-color: black;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+
+
+header .logo {
+    text-decoration: none;
+    color: #ffff;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+header .logo i {
+    color: red;
+    font-size: 4rem;
+}
+
+header .navbar a {
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #ffff;
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+    color: #ffff;
+    background-color: red;
+}
+
+
+.search {
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: 2px solid #22254b;
+    background-color: transparent;
+    font-family: inherit;
+    color: white;
+    font-size: 1rem;
+}
+
+.search::placeholder {
+    color: white;
+}
+
+.search:focus {
+    outline: none;
+    background-color: #05082c;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+/* ye baad me dekhte hai */
+
+.movie {
+    box-shadow: 0 4px 5px rgba(255, 255, 255, 0.2);
+
+    border-radius: 3px;
+    width: 300px;
+    background-color: black;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.movie img {
+    width: 100%;
+
+}
+
+.movie-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    color: #eee;
+    letter-spacing: 0.5px;
+    align-items: center;
+}
+
+.movie-info h3 {
+    margin: 0;
+    color: red;
+}
+
+.movie-info span {
+    background-color: #22254b;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.movie-info span.green {
+    color: rgb(46, 194, 46);
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: red;
+
+}
+
+.overview {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: transform 1s ease-in;
+    max-width: 100%;
+    overflow: auto;
+
+
+
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
+
+}
+
+.overview h4 {
+    margin-top: 0;
+}
+
+.episodes {
+    color: #fff;
+    position: hidden;
+    text-align: center;
+    bottom: .2rem;
+
+}
+
+.head {
+    color: whitesmoke;
+    font-size: 1rem;
+    font-style: normal;
+    background-color: black;
+    border-radius: 2rem;
+}
+
+
+.head:hover {
+    color: red;
+
+}
+
+.overview {
+
+    color: white;
+    font-style: italic;
+    background-image: url("image/download1.jfif");
+}
+
+.air {
+    font-size: .7rem;
+    font-style: italic;
+    text-align: right;
+    display: flex;
+    padding: .5rem;
+
+    position: hidden;
+}
+
+.syp {
+    margin-top: 0;
+    font-size: .9rem;
+    font-style: italic;
+    color: white;
+
+}
+
+
+
+
+/* about us ki styling */
+
+
+
+
+
+
+
+
+
+
+/* contact us ki styling */
+.reach {
+
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #252525;
+}
+
+
+.container {
+    width: 85%;
+    background: black;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .content .left-side {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.content .left-side::before {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+
+.content .left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+
+.content .left-side .details i {
+    font-size: 30px;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.content .left-side .details .topic {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+    font-size: 14px;
+    color: #afafb6;
+}
+
+.container .content .right-side {
+    width: 75%;
+    margin-left: 75px;
+    color: #fff;
+}
+
+.content .right-side .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: red;
+}
+
+.right-side .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .message-box {
+    margin-top: 0rem;
+    min-height: 70px;
+}
+
+.right-side .input-box textarea {
+    padding-top: 6px;
+}
+
+.right-side .button {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.right-side .button input[type="button"] {
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: red;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input[type="button"]:hover {
+    background-color: white;
+    color: black;
+
+}
+
+@media (max-width: 950px) {
+    .container {
+        width: 90%;
+        padding: 30px 40px 40px 35px;
+    }
+
+    .container .content .right-side {
+        width: 75%;
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 820px) {
+    .container {
+        margin: 40px 0;
+        height: 100%;
+    }
+
+    .container .content {
+        flex-direction: column-reverse;
+    }
+
+    .container .content .left-side {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container .content .left-side::before {
+        display: none;
+    }
+
+    .container .content .right-side {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-section {
+    background: black;
+    padding-top: 60px;
+    margin-top: .7rem;
+}
+
+.footer-about {
+    margin-bottom: 30px;
+}
+
+.footer-about .fa-logo {
+    margin-bottom: 22px;
+
+}
+
+.footer-about .fa-logo a {
+
+    color: #ffff;
+    font-size: 5rem;
+    font-weight: bolder;
+text-decoration: none;
+    display: inline-block;
+}
+
+.footer-about .fa-logo i {
+    color: red;
+    font-size: 6rem;
+
+}
+
+.footer-about p {
+    margin-bottom: 30px;
+    color: white;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.footer-about .fa-social a {
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+    background: #252525;
+    height: 46px;
+    width: 46px;
+    line-height: 46px;
+    text-align: center;
+    -webkit-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.footer-about .fa-social a:hover {
+    background-color: red;
+}
+
+
+
+.footer-about .fa-social a i {
+    display: inline-block;
+    -webkit-transform: skewX(15deg);
+    -ms-transform: skewX(15deg);
+    transform: skewX(15deg);
+}
+
+.editor-choice {
+
+    justify-content: end;
+}
+
+
+.editor-choice .ec-item {
+    margin-bottom: 30px;
+    overflow: hidden;
+    justify-content: right;
+
+}
+
+.editor-choice .ec-item .ec-pic img {
+    border-radius: 30rem;
+}
+
+.heading2 {
+    color: white;
+    font-size: 1.7rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+    align-items: center;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+
+
+
+
+.editor-choice .ec-item .ec-pic {
+    float: left;
+    margin-right: 25px;
+
+}
+
+.editor-choice .ec-item .ec-text {
+    overflow: hidden;
+}
+
+.editor-choice .ec-item .ec-text h6 {
+    margin-bottom: 4px;
+}
+
+.editor-choice .ec-item .ec-text h6 a {
+    font-size: 14px;
+    color: #c4c4c4;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+
+.editor-choice .ec-item .ec-text h6 a:hover {
+    color: red;
+
+}
+
+
+.editor-choice .ec-item .ec-text ul li {
+    list-style: none;
+    font-size: 12px;
+    color: #666666;
+    font-style: italic;
+    display: inline-block;
+    position: relative;
+    margin-right: 28px;
+}
+
+.editor-choice .ec-item .ec-text ul li i {
+    margin-right: 4px;
+}
+
+.editor-choice .ec-item .ec-text ul li:last-child {
+    margin-right: 0;
+}
+
+.editor-choice .ec-item .ec-text ul li:last-child:after {
+    display: none;
+}
+
+.editor-choice .ec-item .ec-text ul li:after {
+    position: absolute;
+    right: -18px;
+    top: 0;
+    content: "/";
+    color: #666666;
+}
+
+
+
+.copyright-area {
+    border-top: 1px solid #252525;
+    padding: 24px 0 18px;
+    margin-top: 20px;
+}
+
+.copyright-area .ca-text {
+    font-size: 14px;
+    color: #c4c4c4;
+}
+
+.copyright-area .ca-text i {
+    color: #c20000;
+}
+
+.copyright-area .ca-text a {
+    color: #c4c4c4;
+}
+
+.copyright-area .ca-text a:hover {
+    color: #c20000;
+}
+
+.copyright-area .ca-links {
+    text-align: right;
+}
+
+.copyright-area .ca-links a {
+    font-size: 14px;
+    color: #c4c4c4;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.copyright-area .ca-links a:last-child {
+    margin-right: 0;
+}
+
+.copy {
+    background-color: black;
+
+}
+
+/* ----------------------------------- Other Pages Styles ----------------------------------- */
+
+
+.back {
+    background-color: black !important;
+    position: relative;
+    top: -53px !important;
+}
+.head4{
+    left: 40%;
+    position: relative;
+    
+ }
+ .head4 .logo i{
+    color: red;
+    font-size: 4rem;
+
+ }
+ .head4 a{
+    position: relative;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+  
+
+ }
+
+    
+
+.heading7 {
+    color: white;
+    position: relative;
+    font-size: 2.2rem;
+    background-color: black;
+    text-align: center;
+    top: -11px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: .3rem;
+}
+
+.heading7:hover {
+    color: white;
+    letter-spacing: .4rem;
+    color: red;
+}
+.button1{
+    background-color: red;
+   border-radius: .4rem;
+   font-size: 1.2rem;
+   color: white;
+   font-family: 'Nunito', sans-serif;
+}
+.button1:hover{
+    letter-spacing: .1rem;
+}
+
+
+.vid {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+}
+
+.full-screen {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.full-screen video {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    z-index: 1;
+
+}
+
+.container-fluid,
+.Container {
+    max-width: 1200px;
+
+}
+
+.card-container {
+    padding: 100px 0px;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+
+.profile-card-1 {
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-image: url(../img/profile-bg-1.jpg);
+    background-position: center;
+    padding-top: 100px;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    max-width: 300px;
+}
+
+.profile-card-1 .profile-content {
+    position: relative;
+    background-color: #FFF;
+    padding: 70px 20px 20px 20px;
+    text-align: center;
+}
+
+.profile-card-1 .profile-img {
+    position: absolute;
+    height: 100px;
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    top: -50px;
+    transition: all 0.25s linear;
+    transform-style: preserve-3d;
+}
+
+.profile-card-1 .profile-img img {
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    border: 5px solid #FFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-card-1 .profile-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #021830;
+}
+
+.profile-card-1 .profile-address {
+    color: #777;
+    font-size: 12px;
+    margin: 0px 0px 15px 0px;
+}
+
+.profile-card-1 .profile-description {
+    font-size: 13px;
+    padding: 5px 10px;
+    color: #777;
+}
+
+.profile-card-1 .profile-icons .fa {
+    margin: 5px;
+    color: #777;
+}
+
+.profile-card-1:hover {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card-1:hover .profile-img {
+    transform: rotateY(180deg);
+}
+
+.profile-card-2 {
+    max-width: 300px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.profile-card-2 img {
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-name {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    font-size: 30px;
+    color: #FFF;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    color: #FFF;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-username {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #FFF;
+    font-size: 13px;
+    transition: all linear 0.25s;
+}
+
+.profile-card-2 .profile-icons .fa {
+    margin: 5px;
+}
+
+.profile-card-2:hover img {
+    filter: grayscale(100%);
+}
+
+.profile-card-2:hover .profile-name {
+    bottom: 80px;
+}
+
+.profile-card-2:hover .profile-username {
+    bottom: 60px;
+}
+
+.profile-card-2:hover .profile-icons {
+    right: 40px;
+}
+
+.profile-card-3 {
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    padding: 25px 15px;
+}
+
+.profile-card-3 .profile-name {
+    font-weight: bold;
+    color: #21304e;
+}
+
+.profile-card-3 .profile-location {
+    color: #999;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile-card-3 img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin: 10px auto;
+    border-radius: 50%;
+    transition: all linear 0.25s;
+}
+
+.profile-card-3 .profile-description {
+    font-size: 13px;
+    color: #777;
+    padding: 10px;
+}
+
+.profile-card-3 .profile-icons {
+    margin: 15px 0px;
+}
+
+.profile-card-3 .profile-icons .fa {
+    color: #fe455a;
+    margin: 0px 5px;
+}
+
+.profile-card-3:hover img {
+    height: 110px;
+    width: 110px;
+    margin: 5px auto;
+}
+
+.profile-card-4 {
+    max-width: 300px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.profile-card-4 img {
+    transition: all 0.25s linear;
+}
+
+.profile-card-4 .profile-content {
+    position: relative;
+    padding: 15px;
+    background-color: #FFF;
+}
+
+.profile-card-4 .profile-name {
+    font-weight: bold;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -70px;
+    color: #FFF;
+    font-size: 17px;
+}
+
+.profile-card-4 .profile-name p {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.profile-card-4 .profile-description {
+    color: #777;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.profile-card-4 .profile-overview {
+    padding: 15px 0px;
+}
+
+.profile-card-4 .profile-overview p {
+    font-size: 10px;
+    font-weight: 600;
+    color: #777;
+}
+
+.profile-card-4 .profile-overview h4 {
+    color: #273751;
+    font-weight: bold;
+}
+
+.profile-card-4 .profile-content::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    top: -10px;
+    left: 0px;
+    right: 0px;
+    background-color: #FFF;
+    z-index: 0;
+    transform: skewY(3deg);
+}
+
+.profile-card-4:hover img {
+    transform: rotate(5deg) scale(1.1, 1.1);
+    filter: brightness(110%);
+}
+
+.profile-card-5 {
+    max-width: 300px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    padding: 50px 15px 25px 15px;
+}
+
+.profile-card-5 img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin: 10px auto;
+    border-radius: 50%;
+    transition: all linear 0.25s;
+    position: relative;
+}
+
+.profile-card-5::before {
+    content: "";
+    position: absolute;
+    top: -60px;
+    right: 0px;
+    left: 0px;
+    height: 170px;
+    background-color: #4fb96e;
+    transform: skewY(-20deg);
+}
+
+.profile-card-5 .profile-name {
+    padding-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-card-5 .profile-designation {
+    font-size: 13px;
+    color: #777;
+}
+
+.profile-card-3 .profile-location {
+    color: #999;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.profile-card-5 .profile-description {
+    font-size: 13px;
+    color: #777;
+    padding: 10px;
+}
+
+.profile-card-5 .profile-overview {
+    padding: 15px 0px;
+}
+
+.profile-card-5 .profile-overview p {
+    color: #777;
+    font-size: 13px;
+}
+
+.profile-card-5 .profile-overview h2 {
+    font-weight: bold;
+    color: #1e2832;
+}
+
+.profile-card-5 .profile-icons .fa {
+    margin: 7px;
+    color: #4fb96e;
+}
+
+.profile-card-5:hover img {
+    transform: rotate(-5deg);
+}
+
+.profile-card-6 {
+    max-width: 300px;
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.profile-card-6 img {
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-name {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 15px 20px;
+    background: linear-gradient(140deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0) 50%);
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-position {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.4);
+    left: 30px;
+    top: 100px;
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-overview {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 50%, rgba(255, 255, 0, 0));
+    color: #FFF;
+    padding: 50px 0px 20px 0px;
+    transition: all 0.15s linear;
+}
+
+.profile-card-6 .profile-overview h3 {
+    font-weight: bold;
+}
+
+.profile-card-6 .profile-overview p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-card-6:hover img {
+    filter: brightness(80%);
+}
+
+.profile-card-6:hover .profile-name {
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+.profile-card-6:hover .profile-position {
+    left: 40px;
+}
+
+.profile-card-6:hover .profile-overview {
+    padding-bottom: 25px;
+}
+
+.profile-card-7 {
+    background-color: #FFF;
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.profile-card-7 .profile-content {
+    padding: 60px 30px 30px 30px;
+    background-color: #FFF;
+    position: relative;
+}
+
+.profile-card-7 .profile-content img {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    top: -40px;
+    border: 5px solid #FFF;
+}
+
+.profile-card-7 .profile-content .profile-name {
+    position: absolute;
+    font-size: 17px;
+    font-weight: bold;
+    top: -35px;
+    left: 125px;
+    color: #FFF;
+}
+
+.profile-card-7 .profile-overview {
+    padding: 5px 0px;
+}
+
+.profile-card-7 .profile-overview p {
+    color: #777;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.profile-card-7 .profile-overview h5 {
+    color: #142437;
+    font-weight: bold;
+}
+
+.profile-card-8 {
+    background: linear-gradient(#09121c, #36445a);
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: all 0.25s linear;
+}
+
+.profile-card-8 .profile-name {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 25px;
+    color: #58d683;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.profile-card-8 .profile-designation {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50px;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.profile-card-8 .profile-icons {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 80px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.profile-card-8 .profile-icons .fa {
+    margin: 5px;
+}
+
+.profile-card-8:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.profile-card-9 {
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    padding: 30px 15px;
+    background-color: #FFF;
+    transition: all 0.25s linear;
+}
+
+.profile-card-9 img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.profile-card-9 .profile-name {
+    font-size: 15px;
+    color: #3249b9;
+    font-weight: 600;
+}
+
+.profile-card-9 .profile-designation {
+    font-size: 13px;
+    color: #777;
+}
+
+.profile-card-9 .profile-description {
+    padding: 10px;
+    font-size: 13px;
+    color: #777;
+    margin: 15px 0px;
+    background-color: #F1F2F3;
+    border-radius: 5px;
+}
+
+.profile-card-9 a {
+    padding: 10px 15px;
+    background-color: #3249b9;
+    color: #FFF;
+    font-size: 11px;
+    border-radius: 25px;
+}
+
+.profile-card-9:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.profile-card-10 {
+    border-radius: 5px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    cursor: pointer;
+    padding: 30px 15px;
+    background-color: #1f2124;
+    color: #EEE;
+}
+
+.profile-card-10 img {
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    box-shadow: 0px 0px 0px 2px #64c17b;
+    transition: all 0.25s linear;
+}
+
+.profile-card-10 .profile-name {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.profile-card-10 .profile-location {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.profile-card-10 .profile-description {
+    padding: 10px;
+    font-size: 13px;
+}
+
+.profile-card-10 .profile-icons .fa {
+    color: #ffc75e;
+    margin: 10px;
+}
+
+.profile-card-10:hover img {
+    transform: scale(1.1);
+}
+
+
+.messi {
+    position: relative;
+    margin: 0;
+    background:black;
+    font-family: 'Montserrat', helvetica, arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    top: -45px;
+}
+
+.link {
+    display: block;
+    text-align: center;
+    color: rgb(244, 241, 241);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.movie_card {
+    position: relative;
+    display: block;
+    width: 800px;
+    height: 350px;
+    margin: 80px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.4s;
+    box-shadow: 0px 0px 120px -25px rgba(250, 245, 245, 0.5);
+}
+
+.movie_card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 80px -25px rgba(253, 253, 253, 0.5);
+    transition: all 0.4s;
+}
+
+.info_section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+    background-blend-mode: multiply;
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.movie_header {
+    position: relative;
+    padding: 25px;
+    height: 40%;
+}
+
+h1 {
+    color: rgb(239, 234, 234);
+    font-weight: 400;
+}
+
+h4 {
+    color: rgb(234, 222, 222);
+    font-weight: 400;
+}
+
+.minutes {
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(242, 236, 236, 0.05);
+}
+
+.type {
+    display: inline-block;
+    color: white;
+    margin-left: 10px;
+}
+
+.locandina {
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    height: 120px;
+    box-shadow: 0 0 20px -10px rgba(229, 224, 224, 0.5);
+}
+
+.movie_desc {
+    padding: 25px;
+    height: 50%;
+}
+
+.movie_des.text {
+    color:white;
+}
+
+.movie_social {
+    height: 10%;
+    padding-left: 15px;
+    padding-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    color: white;
+    transition: color 0.3s;
+    transition-delay: 0.15s;
+    margin: 0 10px;
+}
+
+.li:hover {
+    transition: color 0.3s;
+    color: rgba(232, 219, 219, 0.7);
+}
+
+i {
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.blur_back {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    right: 0;
+    background-size: cover;
+    border-radius: 11px;
+}
+
+.front{
+    position: relative;
+    top: 19;
+}
+.copy1{
+    position:relative;
+    top: 1;
+    background-color: black;
+}
+
+
+@media screen and (min-width: 768px) {
+    .movie_header {
+        width: 65%;
+    }
+
+    .movie_desc {
+        width: 50%;
+    }
+
+    .info_section {
+        background: linear-gradient(to right, #e5e6e6 50%, transparent 100%);
+    }
+
+    .blur_back {
+        width: 80%;
+        background-position: -100% 10% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .movie_card {
+        width: 95%;
+        margin: 70px auto;
+        min-height: 350px;
+        height: auto;
+    }
+
+    .blur_back {
+        width: 100%;
+        background-position: 50% 50% !important;
+    }
+
+    .movie_header {
+        width: 100%;
+        margin-top: 85px;
+    }
+
+    .movie_desc {
+        width: 100%;
+    }
+
+    .info_section {
+        background: linear-gradient(to top, #e5e6e6 50%, transparent 100%);
+        display: inline-grid;
+    }
+}
+
+
+.bright_back {
+    background: url("image/home7.jpg");
+}
+
+.tomb_back {
+    background: url("image/home8.jpg");
+}
+
